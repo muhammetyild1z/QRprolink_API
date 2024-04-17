@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\muham\\OneDrive\\Belgeler\\GitHub\\QRprolink_API\\QRprolink_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F0336F8-1D32-46F7-9394-B879424391F7}|QRprolink_API\\QRprolink_API.csproj|c:\\users\\muham\\onedrive\\belgeler\\github\\qrprolink_api\\qrprolink_api\\qrprolink_api\\controllers\\qrgeneratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F0336F8-1D32-46F7-9394-B879424391F7}|QRprolink_API\\QRprolink_API.csproj|solutionrelative:qrprolink_api\\controllers\\qrgeneratecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F0336F8-1D32-46F7-9394-B879424391F7}|QRprolink_API\\QRprolink_API.csproj|c:\\users\\muham\\onedrive\\belgeler\\github\\qrprolink_api\\qrprolink_api\\qrprolink_api\\models\\qrcodemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F0336F8-1D32-46F7-9394-B879424391F7}|QRprolink_API\\QRprolink_API.csproj|solutionrelative:qrprolink_api\\models\\qrcodemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1108,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QRCodeModel.cs",
+              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Belgeler\\GitHub\\QRprolink_API\\QRprolink_API\\QRprolink_API\\Models\\QRCodeModel.cs",
+              "RelativeDocumentMoniker": "QRprolink_API\\Models\\QRCodeModel.cs",
+              "ToolTip": "C:\\Users\\muham\\OneDrive\\Belgeler\\GitHub\\QRprolink_API\\QRprolink_API\\QRprolink_API\\Models\\QRCodeModel.cs",
+              "RelativeToolTip": "QRprolink_API\\Models\\QRCodeModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T08:45:41.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QRGenerateController.cs",
+              "DocumentMoniker": "C:\\Users\\muham\\OneDrive\\Belgeler\\GitHub\\QRprolink_API\\QRprolink_API\\QRprolink_API\\Controllers\\QRGenerateController.cs",
+              "RelativeDocumentMoniker": "QRprolink_API\\Controllers\\QRGenerateController.cs",
+              "ToolTip": "C:\\Users\\muham\\OneDrive\\Belgeler\\GitHub\\QRprolink_API\\QRprolink_API\\QRprolink_API\\Controllers\\QRGenerateController.cs",
+              "RelativeToolTip": "QRprolink_API\\Controllers\\QRGenerateController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAhwGEAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T08:06:08.907Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
