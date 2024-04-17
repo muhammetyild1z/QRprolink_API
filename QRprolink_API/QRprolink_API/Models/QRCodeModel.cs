@@ -50,7 +50,7 @@ namespace QRprolink_API.Models
         public double Longitude { get; set; }
         //for phone number to qr code
         [MaxLength(11)]
-        public string phoneNumaber { get; set; }
+        public string phoneNumber { get; set; }
         //for One-Time-Password to qr code
         public string Secret { get; set; }
         public string Issuer { get; set; }

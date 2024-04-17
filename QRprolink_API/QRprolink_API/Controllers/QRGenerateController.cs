@@ -53,7 +53,7 @@ namespace QRprolink_API.Controllers
                     payload = new QRCoder.PayloadGenerator.Geolocation(model.Latitude.ToString(), model.Longitude.ToString());
                     break;
                 case 11: // phone number  qr code       
-                    payload = new QRCoder.PayloadGenerator.PhoneNumber(model.phoneNumaber);
+                    payload = new QRCoder.PayloadGenerator.PhoneNumber(model.phoneNumber);
                     break;
                 case 12: // OneTimePassword to qr code
                     OneTimePassword generator = new OneTimePassword()
