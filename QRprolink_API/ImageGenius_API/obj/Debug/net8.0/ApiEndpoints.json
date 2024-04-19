@@ -1,0 +1,33 @@
+[
+  {
+    "ContainingType": "ImageGenius_API.Controllers.ImageDesignController",
+    "Method": "ImgConvert",
+    "RelativePath": "api/ImageDesign/imgconvert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputPath",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "outputPath",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "targetWidth",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "targetHeight",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

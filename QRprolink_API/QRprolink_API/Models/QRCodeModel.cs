@@ -5,10 +5,7 @@ namespace QRprolink_API.Models
 {
     public class QRCodeModel
     {
-
-        //QR customize
-        public string bgcolor { get; set; }
-        public string qrcolor { get; set; }
+ 
         //QR customize End
         public int QRCodeType { get; set; }
         //for url qr code
