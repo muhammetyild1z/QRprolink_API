@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "lkQtDNEoXwf1DrfTyHCrd+JOw8oKh+4NfOboYLVcQYU=",
+  "Source": "GenerateNFC_API",
+  "BasePath": "_content/GenerateNFC_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

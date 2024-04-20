@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QRprolink_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58d179f2eb87d939447526b98a6900f5b227004f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+580c0423e92c0851f51863d68aa045ddb792713b")]
 [assembly: System.Reflection.AssemblyProductAttribute("QRprolink_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QRprolink_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

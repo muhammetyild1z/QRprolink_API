@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QRprolink_API", "QRprolink_API\QRprolink_API.csproj", "{7F0336F8-1D32-46F7-9394-B879424391F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageGenius_API", "ImageGenius_API\ImageGenius_API.csproj", "{B49C0954-B69E-4BDA-B5AF-3E00A2F84FFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageGenius_API", "ImageGenius_API\ImageGenius_API.csproj", "{B49C0954-B69E-4BDA-B5AF-3E00A2F84FFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateNFC_API", "GenerateNFC_API\GenerateNFC_API.csproj", "{12E0002A-FBAA-4B50-88D1-B8B9811B1668}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B49C0954-B69E-4BDA-B5AF-3E00A2F84FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B49C0954-B69E-4BDA-B5AF-3E00A2F84FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B49C0954-B69E-4BDA-B5AF-3E00A2F84FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E0002A-FBAA-4B50-88D1-B8B9811B1668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E0002A-FBAA-4B50-88D1-B8B9811B1668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E0002A-FBAA-4B50-88D1-B8B9811B1668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E0002A-FBAA-4B50-88D1-B8B9811B1668}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

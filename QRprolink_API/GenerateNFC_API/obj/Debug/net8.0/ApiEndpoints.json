@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "NFCDataEncryptionController",
+    "Method": "EncryptNFCDataAndStore",
+    "RelativePath": "api/NFCDataEncryption",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nfcData",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NFCWebsiteHandlerController",
+    "Method": "HandleNFCDataAndRedirect",
+    "RelativePath": "api/NFCWebsiteHandler",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nfcData",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

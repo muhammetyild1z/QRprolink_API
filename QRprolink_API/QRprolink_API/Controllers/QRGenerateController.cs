@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using QRCoder;
 using QRprolink_API.Models;
+using System;
 using System.Drawing;
 using System.IO;
 using static QRCoder.PayloadGenerator;
@@ -82,10 +83,22 @@ namespace QRprolink_API.Controllers
 
             return model;
         }
+        private bool IsValidUrl(string url)
+        {
+            Uri uriResult;
+            bool isValidUrl = Uri.TryCreate(url, UriKind.Absolute, out uriResult)
+                && (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps);
 
+            return isValidUrl;
+        }
         [HttpPost]
         private IActionResult GenerateQRCodeFile(Payload payload, QRCustomizeModel model)
         {
+            // QRCodeData qrCodeData = qrGenerator.CreateQrCode(payload);
+            //  AsciiQRCode qrCode = new AsciiQRCode(qrCodeData);
+            //  string qrCodeAsAsciiArt = qrCode.GetGraphic(1);
+            //  return Ok(qrCodeAsAsciiArt);
+
             //C:/Users/muham/OneDrive/Belgeler/GitHub/AnimeX/AnimeX/AnimeX/wwwroot/animeX/img/log.png
             // QR kodunu oluştur
             Bitmap qrIconFromBitmap;
@@ -107,15 +120,16 @@ namespace QRprolink_API.Controllers
         [HttpPost("url")]
         public IActionResult GenerateQRCodeFromURL(string url, string bgcolor, string qrcolor, int qrsize, string icon, int iconSizePercent, int iconSizeBorder)
         {
-            var model = modelCreate(bgcolor, qrcolor, qrsize, icon, iconSizePercent, iconSizeBorder);
-
-            if (url.Length > 100)
+            if(url.Length < 100) return BadRequest("url en fazla 100 karakter olmalıdır");
+            bool urlCheck = IsValidUrl(url);
+            if (urlCheck )
             {
-                return BadRequest("url en fazla 100 karakter olmalıdır");
+                var model = modelCreate(bgcolor, qrcolor, qrsize, icon, iconSizePercent, iconSizeBorder);
+                var newUrl = urlClear(url);
+                var payload = new PayloadGenerator.Url(newUrl);
+                return GenerateQRCodeFile(payload, model);
             }
-            var newUrl = urlClear(url);
-            var payload = new PayloadGenerator.Url(newUrl);
-            return GenerateQRCodeFile(payload, model);
+            return BadRequest("Geçersiz URL!");
         }
 
         [HttpPost("bookmark")]
@@ -276,13 +290,13 @@ namespace QRprolink_API.Controllers
             return GenerateQRCodeFile(payload, model);
         }
 
-        [HttpPost("music")]
-        public IActionResult GenerateQRCodeFromMusic(string musicURL, string bgcolor, string qrcolor, int qrsize, string icon, int iconSizePercent, int iconSizeBorder)
-        {
-            Payload payload = new PayloadGenerator.Url(musicURL);
-            var model = modelCreate(bgcolor, qrcolor, qrsize, icon, iconSizePercent, iconSizeBorder);
-            return GenerateQRCodeFile(payload, model);
-        }
+        //[HttpPost("music")]
+        //public IActionResult GenerateQRCodeFromMusic(string musicURL, string bgcolor, string qrcolor, int qrsize, string icon, int iconSizePercent, int iconSizeBorder)
+        //{
+        //    Payload payload = new PayloadGenerator.Url(musicURL);
+        //    var model = modelCreate(bgcolor, qrcolor, qrsize, icon, iconSizePercent, iconSizeBorder);
+        //    return GenerateQRCodeFile(payload, model);
+        //}
     }
 }
 
